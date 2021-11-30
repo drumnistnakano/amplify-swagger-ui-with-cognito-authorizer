@@ -81,7 +81,7 @@ $ amplify add hosting
 
 コマンド実行後、マネージメントコンソールに遷移されるので各種設定をします。
 
-5. 環境変数を設定
+6. 各種設定
 
 - 追加する環境変数
 
@@ -95,6 +95,9 @@ AMPLIFY_NATIVECLIENT_ID: {importしたamplify nativeclientid}
 AMPLIFY_USERPOOL_ID: {importしたamplify userpooolid}
 AMPLIFY_WEBCLIENT_ID: {importしたamplify webclientid}
 ```
+
+![スクリーンショット_2021-11-30_12_40_49](https://user-images.githubusercontent.com/30113636/143990636-f653eb52-dfaf-4aeb-84b6-0f7ba7f68394.png)
+
 
 - ビルドファイル(amplify.yml)
 
@@ -127,8 +130,7 @@ frontend:
       - node_modules/**/*
 ```
 
-
-1. ビルドエラー回避
+7. ビルドエラー回避
 
 エラーが発生した場合は、amplify ディレクトリの amplify/backend/auth/torcidentityfd5750d1/build/parameters.jso をひとつ上の階層に移動して、build ディレクトリを削除することで回避可能
 
